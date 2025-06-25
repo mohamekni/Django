@@ -13,3 +13,5 @@
 # [6] python manage.py runserver
 
 # [7] python manage.py migrate
+
+# [8] python manage.py startapp pages

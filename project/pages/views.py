@@ -13,4 +13,4 @@ def index(request):
     return render(request,'pages/index.html', myInfo)
 
 def about(request):
-    pass
+    return render(request,'pages/about.html')

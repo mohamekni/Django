@@ -1,6 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
 <h1> Hello Django From Index</h1>
 First Name = {{firstName|cut:' '}} <br>
 Last Name = {{lastName|slice:'2:'}} <br>
 Age = {{age}} <br>
 File Size = {{fileSize|filesizeformat}}
+
+{% endblock content %}
+
 

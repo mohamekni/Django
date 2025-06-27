@@ -15,3 +15,11 @@
 # [7] python manage.py migrate
 
 # [8] python manage.py startapp pages
+
+# [9] python manage.py collectstatic
+
+# [10] python .\manage.py createsuperuser
+
+# [11] python .\manage.py makemigrations
+
+# [12] python .\manage.py migrate

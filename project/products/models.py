@@ -1,5 +1,5 @@
 from django.db import models
-
+from datetime import datetime
 # Create your models here.
 class Product(models.Model):
     choix = [
@@ -23,3 +23,8 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'Phone'
         ordering = ['-price']
+
+class TestDate(models.Model):
+    date = models.DateField()
+    time = models.TimeField(null=True)
+    Created = models.DateTimeField(default=datetime.now())

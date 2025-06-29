@@ -8,9 +8,10 @@ def index(request):
 
 def about(request):
 
-    
-    dataForm = LoginForm(request.POST)
-    dataForm.save()
+    if request.method == 'POST':
+        dataForm = LoginForm(request.POST)
+        if dataForm.is_valid():
+            dataForm.save()
     # username = request.POST.get('username')
     # password = request.POST.get('password')
     # data = Login(username = username,password = password)

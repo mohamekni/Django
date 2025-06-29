@@ -4,10 +4,11 @@
 <p> Hello From About Page</p>
 <form method="POST">
     {% csrf_token %}
-<input type="text" name="username" placeholder="UserName">
+<!-- <input type="text" name="username" placeholder="UserName">
 <br>
 <input type="password" name="password" placeholder="Password">
-<br>
+<br> -->
+{{loginform}}
 <input type="submit" value="Login">
 </form>
 {% endblock content %}

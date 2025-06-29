@@ -1,16 +1,14 @@
 from django.shortcuts import render
-
+from .models import Login
 
 # Create your views here.
 
 def index(request):
-    myInfo = {
-        'firstName':'Moha So Good No Love',
-        'lastName':'LaSquale',
-        'age':23,
-        'fileSize':200000000
-    }
-    return render(request,'pages/index.html', myInfo)
+    return render(request,'pages/index.html')
 
 def about(request):
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    data = Login(username = username,password = password)
+    data.save()
     return render(request,'pages/about.html')

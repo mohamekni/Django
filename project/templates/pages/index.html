@@ -4,31 +4,7 @@
 
 {% block content %}
 
-
-<h1> Hello Django From Index</h1>
-First Name = {{firstName|cut:' '}} <br>
-Last Name = {{lastName|slice:'2:'}} <br>
-Age = {{age}} <br>
-File Size = {{fileSize|filesizeformat}}
-
-
-{% if firstName == 'Moha So Good No Love' %}
-<p>Welcome {{firstName}}</p>
-{% else %}
-<p> Welcome Guest</p>
-{% endif %}
-
-{% for i in firstName %}
-<p>{{i}} </p>
-{% endfor %}
-
-
 <img src="{% static 'img/1.jpg' %}" alt="">
-
-
-{% comment %}
-Project Django
-{% endcomment %}
 
 {% endblock content %}
 
